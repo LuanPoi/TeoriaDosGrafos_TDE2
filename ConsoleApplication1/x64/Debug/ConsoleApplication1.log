@@ -1,0 +1,7 @@
+﻿  Main.cpp
+  Grafo.cpp
+c:\users\luan.poi\mini-trabalho_1_-_implementacao_de_m._de_adjacencia-master\consoleapplication1\grafo.cpp(95): warning C4129: '|': unrecognized character escape sequence
+c:\users\luan.poi\mini-trabalho_1_-_implementacao_de_m._de_adjacencia-master\consoleapplication1\grafo.cpp(99): warning C4129: '|': unrecognized character escape sequence
+  Generating Code...
+  ConsoleApplication1.vcxproj -> C:\Users\luan.poi\Mini-trabalho_1_-_Implementacao_de_M._de_Adjacencia-master\x64\Debug\ConsoleApplication1.exe
+  ConsoleApplication1.vcxproj -> C:\Users\luan.poi\Mini-trabalho_1_-_Implementacao_de_M._de_Adjacencia-master\x64\Debug\ConsoleApplication1.pdb (Full PDB)
