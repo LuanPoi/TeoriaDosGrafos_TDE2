@@ -8,12 +8,12 @@ using namespace std;
 class Grafo
 {
 private:
-	vector<vector<Adjacencia>> listaADJ;
+	vector<vector<Adjacencia>> lista;
 	vector<Vertice> vertices;
 	int tamanho;
 	string nome;
 	Grafo();
-	
+
 public:
 	Grafo(int tamanho);
 	~Grafo();

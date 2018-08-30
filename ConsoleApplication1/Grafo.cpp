@@ -8,11 +8,10 @@ Grafo::Grafo()
 Grafo::Grafo(int tamanho)
 {
 	this->tamanho = tamanho;
+	vector<Adjacencia> ADJ;
+	
 	for (int i = 0; i < tamanho; ++i) {
-		for (int j = 0; j < tamanho; ++j) {
-			matrizADJ[i][j] = INFINITY;
-		}
-		vertices[i] = NULL;
+		lista.push_back(ADJ);
 	}
 }
 
