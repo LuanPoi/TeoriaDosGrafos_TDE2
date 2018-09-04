@@ -12,12 +12,6 @@ int main() {
 	
 	cout << endl;
 
-	grafo->cria_vertice(0, "Jose");
-	grafo->cria_vertice(1, "Maria");
-	grafo->cria_vertice(2);
-	grafo->cria_vertice(3);
-	grafo->cria_vertice(4);
-
 	grafo->seta_informacoes(2, "Paulo");
 	grafo->seta_informacoes(3, "Claudio");
 	grafo->seta_informacoes(4, "Carlos");
@@ -30,22 +24,14 @@ int main() {
 	grafo->cria_adjacencia(3, 4, 3);
 	grafo->cria_adjacencia(0, 0, 3);
 
-	cout << "Numero de adjacencias do vertice " << 3 << ": " << grafo->adjacentes(3) << endl;
-
+	grafo->adjacentes(3);
 	grafo->imprime();
-
-	cout << endl;
-	
-	cout << "Numero de adjacencias do vertice " << 0 << ": " << grafo->adjacentes(0) << endl;
-	
+	cout << endl;	
+	grafo->adjacentes(0);	
 	cout << endl;
 	grafo->remove_adjacencia(0, 1);
-
-	grafo->imprime();
-	
+	grafo->imprime();	
 	cout << endl;
-
-	cout << "Numero de adjacencias do vertice " << 0 << ": " << grafo->adjacentes(0) << endl;
-
+	grafo->adjacentes(0);
 	return 0;
 }

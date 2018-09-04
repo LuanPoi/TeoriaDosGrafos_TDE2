@@ -5,7 +5,7 @@ Adjacencia::Adjacencia()
 {
 }
 
-Adjacencia::Adjacencia(Vertice * para, float peso)
+Adjacencia::Adjacencia(Vertice* para, float peso)
 {
 	this->para = para;
 	this->peso = peso;
@@ -18,6 +18,11 @@ Adjacencia::~Adjacencia()
 string Adjacencia::getNome()
 {
 	return para->getNome();
+}
+
+int Adjacencia::getIndice()
+{
+	return para->getIndice();
 }
 
 float Adjacencia::getPeso()

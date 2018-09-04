@@ -16,6 +16,7 @@ public:
 	string getNome();
 	void setNome(string nome);
 	int getIndice();
+	void setIndice(int i);
 	~Vertice();
 };
 

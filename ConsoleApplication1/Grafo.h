@@ -2,14 +2,16 @@
 #include "Vertice.h"
 #include "Adjacencia.h"
 #include <vector>
+#include <list>
 
 using namespace std;
 
 class Grafo
 {
 private:
-	vector<vector<Adjacencia>> lista;
-	vector<Vertice> vertices;
+	list<Adjacencia> * lista;
+	Vertice *vertices;
+
 	int tamanho;
 	string nome;
 	Grafo();
@@ -19,13 +21,10 @@ public:
 	~Grafo();
 	bool cria_adjacencia(int de,int para,float peso); // cria uma adjacência entre i e j com custo P no grafo G;
 	bool remove_adjacencia(int de, int para); // remove a adjacência entre i e j no grafo G;
-	bool cria_vertice(int indice, string nome);
-	bool cria_vertice(int indice);
-	bool remove_vertice(int indice);
-	int adjacentes(int indice); // atualiza a informação do nó i com o valor V (que deve ser uma string) no grafo G;
+	list<Adjacencia> adjacentes(int indice); // atualiza a informação do nó i com o valor V (que deve ser uma string) no grafo G;
 	bool seta_informacoes(int indice, string nome); // atualiza a informação do nó i com o valor V (que deve ser uma string) no grafo G
 	void imprime();
-	void printaNome();
+	void printaNome(int indice);
 	Vertice* getVertices(int indice);
 };
 

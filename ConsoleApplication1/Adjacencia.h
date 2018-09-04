@@ -12,8 +12,9 @@ private:
 	Adjacencia();
 
 public:
-	Adjacencia(Vertice* para, float peso);
+	Adjacencia(Vertice *para, float peso);
 	string getNome();
+	int getIndice();
 	float getPeso();
 	Vertice* getVertice();
 	~Adjacencia();

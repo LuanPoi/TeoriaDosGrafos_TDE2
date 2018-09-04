@@ -37,3 +37,8 @@ int Vertice::getIndice()
 {
 	return this->indice;
 }
+
+void Vertice::setIndice(int i)
+{
+	this->indice = i;
+}
